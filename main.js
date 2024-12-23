@@ -105,7 +105,6 @@ function animate(time) {
     object.material.uniforms.time.value = time / 1000;
   })
 
-  material.uniforms.time.value = time / 1000;
   renderer.render(scene, camera);
 
 }
