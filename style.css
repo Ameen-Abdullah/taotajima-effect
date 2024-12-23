@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 13px;
+  --color-text: #232222;
+  --color-bg: #fff;
+  --color-link: #232222;
+  --color-link-hover: #000;
+}
+
+@font-face {
+  font-family: reg;
+  src: url("/pp.otf");
+}
+body {
+  margin: 0;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+  cursor: pointer;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: reg;
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.container ul {
+  position: relative;
+  width: 75%;
+  display: flex;
+  list-style: none;
+  gap: 5vw;
+}
+.container ul li:nth-child(2n) {
+  margin-top: 9vh;
+}
+.container ul li a .number {
+  font-size: 1.3rem;
+  font-family: bold;
+}
+.container ul li a .title h2 {
+  font-weight: 600;
+  font-size: 1.5vw;
+  line-height: 1;
+  margin-top: 0.5vw !important;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    min-height: 100vh;
+  }
+  .container ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .container ul li:nth-child(2n) {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
