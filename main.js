@@ -24,7 +24,6 @@ let sizes = {
 }
 
 let webglImages = [];
-let webglTexts = [];
 
 // init
 
@@ -55,6 +54,8 @@ function setMediaSize() {
     mesh.scale.set(width, height, 1);
     mesh.position.x = left - sizes.width / 2 + width / 2;
     mesh.position.y = -top + sizes.height / 2 - height / 2;
+
+
 
     scene.add(mesh);
 

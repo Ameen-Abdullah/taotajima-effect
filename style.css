@@ -62,10 +62,10 @@ canvas {
 }
 .container ul {
   position: relative;
-  width: 75%;
+  width: 85%;
   display: flex;
   list-style: none;
-  gap: 5vw;
+  gap: 3vw;
 }
 .container ul li:nth-child(2n) {
   margin-top: 9vh;
